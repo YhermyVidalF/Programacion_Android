@@ -6,13 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:background="#4CAF50"
+        android:onClick="mostrarTostada"
+        android:text="Tostada"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="194dp"
+        android:layout_height="71dp"
+        android:background="#8BC34A"
+        android:onClick="contarClics"
+        android:text="Aumentar"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="89dp"
+        android:background="#4CAF50"
+        android:onClick="resetClics"
+        android:text="Cero/Reset"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="197dp"
+        android:layout_height="69dp"
+        android:background="#4CAF50"
+        android:onClick="menosClics"
+        android:text="Reducir"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="315dp" />
+
     <TextView
+        android:id="@+id/txt_show_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#8E3114"
+        android:backgroundTint="#FF0000"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0"
+        android:textSize="200"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="63dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
