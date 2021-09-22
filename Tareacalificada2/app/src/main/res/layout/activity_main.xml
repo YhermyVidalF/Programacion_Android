@@ -16,86 +16,42 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/txt_nombres"
+            android:layout_alignBaseline="@id/et1"
             android:layout_weight="1"
-            android:text="Nombre" />
+            android:text="Nombre/s" />
 
         <EditText
-            android:id="@+id/txt_nombres"
+            android:id="@+id/et1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/textView5"
             android:ems="10"
+            android:hint="@string/etNombre1"
             android:inputType="textPersonName"
-            tools:ignore="DuplicateClickableBoundsCheck" />
+            tools:ignore="DuplicateClickableBoundsCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_nombres"
-            android:layout_alignBaseline="@id/txt_apellidos"
-            android:text="Apellido" />
+            android:layout_below="@id/et1"
+            android:layout_alignBaseline="@id/et2"
+            android:text="Apellidos" />
 
         <EditText
-            android:id="@+id/txt_apellidos"
+            android:id="@+id/et2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_nombres"
+            android:layout_below="@id/et1"
             android:layout_toRightOf="@id/textView6"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/lenguajes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lenguajes de programación que maneja" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lenguajes">
-
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="java" />
-
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="php" />
-
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="python" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C#" />
-
-            <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C++" />
-
-        </LinearLayout>
-
+            android:hint="@string/etApellido1"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -105,61 +61,157 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lenguajes preferidos" />
+            android:text="Género" />
 
-        <RadioGroup
-            android:id="@+id/radio_group1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView">
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <RadioGroup
+                android:id="@+id/asdna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Java" />
+                    android:text="Masculino" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PHP" />
+                    android:text="Femenino" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Python" />
+                    android:text="Omitir" />
 
-                <RadioButton
-                    android:id="@+id/radioButton4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="C#" />
+            </RadioGroup>
 
-                <RadioButton
-                    android:id="@+id/radioButton5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="C++" />
-
-            </LinearLayout>
-
-
-        </RadioGroup>
+        </LinearLayout>
 
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direccion" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lenguajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el tipo de dirrecion de despacho:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lenguajes">
+
+            <CheckBox
+                android:id="@+id/n1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hogar" />
+
+            <CheckBox
+                android:id="@+id/n2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trabajo" />
+
+            <CheckBox
+                android:id="@+id/n3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urbano" />
+
+            <CheckBox
+                android:id="@+id/n4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limite Urbano" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar"
+        android:layout_gravity="center"
+        android:onClick="Siguiente"
+        android:text="@string/BotonSiguiente"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condiciones:" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONDICIONES DE COMPRA Y ENVÍOS" />
+
+    <CheckBox
+        android:id="@+id/n010101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acepto las condiciones" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♡Todas las ventas se realizan únicamente a través de nuestro sitio web www.kawaiitreats.cl *Los envíos a región son realizados los días MIÉRCOLES  *Los envíos dentro de Santiago y a 5ta región son realizados el día JUEVES; . Esto puede ser modificado ante cualquier eventualidad y será anunciado por nuestras redes sociales.  MÉTODOS DE ENVÍO ♡ BLUEXPRESS:  Todos los envíos excluyendo Santiago y 5ta región serán enviados a través de BLUEXPRESS. El tiempo promedio de entrega de encomiendas de BLUEXPRESS es de 3 a 5 días hábiles en regiones y 6 a 7 días hábiles en regiones extremas desde el envío. En algunas ocasiones bluexpress puede determinar no realizar la entrega a domicilio y despacharla a la sucursal mas cercana; a su vez también puede presentar retrasos ocasionales de hasta 10 días hábiles.  Desde el momento que es despachado el paquete a través de bluexpress es responsabilidad del cliente monitorear con el código de seguimiento enviado su encomienda y ante cualquier problema o eventualidad será el cliente quien deba comunicarse con correos de chile para mantener progreso con el envío.  Los envíos con bluexpress son realizados los días MIÉRCOLES EL TIEMPO QUE MANEJA BLUEXPRESS ES DETERMINADO POR ELLOS. Nosotros podemos hacer un estimado, pero no somos la empresa de transporte.   Cualquier demora desde el momento del envío es responsabilidad de la empresa mencionada anteriormente.  "
+            android:textSize="10sp" />
+
+    </RelativeLayout>
 </LinearLayout>

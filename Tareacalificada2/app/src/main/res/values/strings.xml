@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Tarea calificada 2</string>
+    <string name="app_name">EvaluacionU1</string>
+    <string name="BotonSiguiente">Siguiente</string>
+    <string name="BotonAnterior">Atras</string>
+    <string name="etNombre1"></string>
+    <string name="etApellido1"></string>
+    <string name="Datoname">Datosname</string>
 </resources>
